@@ -1,0 +1,58 @@
+# recipe for dataset
+info:
+    id: ddf--open_numbers--owid_covid_19
+    base:  # the datasets for ingredients
+        - &d1 ddf--owid--covid_19
+        - &d2 ddf--open_numbers
+
+
+ingredients:
+  - id: owid-locations
+    dataset: *d1
+    key: location
+    value: "*"
+
+  - id: owid-datapoints
+    dataset *d1
+    key: "location, date"
+    value: "*"
+
+  - id: on-synonyms
+    dataset: *d2
+    key: synonym
+    value: "*"
+
+
+cooking:
+  datapoints:
+    - procedure: translate_columns
+      ingredients:
+        - owid-locations
+      options:
+        dictionary:
+          base: on-synonyms
+          key: synonym
+          value: geo
+        column: location
+        target_column: geo
+      result: owid-locations-translated
+
+    - procedure: translate_columns
+      ingredients:
+        - owid-datapoints
+      options:
+        dictionary:
+          base: owid-locations-translated
+          key: location
+          value: geo
+        column: location
+      result: owid-datapoints-translated
+
+    - procedure: translate_headers
+      ingredients:
+        - owid-datapoints-translated
+      options:
+        dictionary:
+          location: geo
+          date: time
+      result: owid-datapoints-translated-correct-header
