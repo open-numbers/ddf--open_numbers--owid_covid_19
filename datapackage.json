@@ -1,0 +1,14 @@
+{
+    "name": "ddf--open_numbers--owid_covid_19",
+    "author": "Gapminder",
+    "description": "OWID covid 19 dataset in open-numbers namespace",
+    "language": {
+        "name": "English",
+        "id": "en"
+    },
+    "translations": [],
+    "license": "CC-BY-4.0",
+    "title": "Covid 19[D[D[D[D[D[D[D[DOWID",
+    "version": "0.0.1",
+    "resources": []
+}
