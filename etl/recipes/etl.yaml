@@ -2,8 +2,8 @@
 info:
     id: ddf--open_numbers--owid_covid_19
     base:  # the datasets for ingredients
-        - &d1 ddf--owid--covid_19
-        - &d2 ddf--open_numbers
+        - &d1 open-numbers/ddf--owid--covid_19
+        - &d2 open-numbers/ddf--open_numbers
 
 
 ingredients:
@@ -13,19 +13,34 @@ ingredients:
     value: "*"
 
   - id: owid-datapoints
-    dataset *d1
-    key: "location, date"
+    dataset: *d1
+    key: location, date
     value: "*"
 
   - id: on-synonyms
     dataset: *d2
-    key: synonym
+    key: synonym, geo
+    value: "*"
+
+  - id: on-entities
+    dataset: *d2
+    key: geo
+    value: "*"
+
+  - id: on-concepts
+    dataset: *d2
+    key: concept
+    value: "*"
+
+  - id: owid-concepts
+    dataset: *d1
+    key: concept
     value: "*"
 
 
 cooking:
   datapoints:
-    - procedure: translate_columns
+    - procedure: translate_column
       ingredients:
         - owid-locations
       options:
@@ -33,11 +48,11 @@ cooking:
           base: on-synonyms
           key: synonym
           value: geo
-        column: location
+        column: name
         target_column: geo
       result: owid-locations-translated
 
-    - procedure: translate_columns
+    - procedure: translate_column
       ingredients:
         - owid-datapoints
       options:
@@ -48,11 +63,35 @@ cooking:
         column: location
       result: owid-datapoints-translated
 
-    - procedure: translate_headers
+    - procedure: translate_header
       ingredients:
         - owid-datapoints-translated
       options:
         dictionary:
           location: geo
           date: time
-      result: owid-datapoints-translated-correct-header
+      result: datapoints-final
+
+  concepts:
+    - procedure: translate_column
+      ingredients:
+        - owid-concepts
+      options:
+        column: concept
+        dictionary:
+          location: country
+          date: time
+        not_found: include
+      result: owid-concepts-renamed
+    - procedure: merge
+      ingredients:
+        - owid-concepts-renamed
+        - on-concepts
+      options:
+        deep: true
+      result: concepts-final
+
+  entities:
+    - procedure: serve
+      ingredients:
+        - on-entities
