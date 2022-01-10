@@ -8,7 +8,7 @@
     "description": "OWID covid 19 dataset in open-numbers namespace",
     "author": "Gapminder",
     "license": "CC-BY-4.0",
-    "created": "2022-01-09T12:11:29.813759+00:00",
+    "created": "2022-01-10T05:17:58.761780+00:00",
     "translations": [],
     "version": "0.0.1",
     "resources": [
@@ -19,9 +19,6 @@
                 "fields": [
                     {
                         "name": "concept"
-                    },
-                    {
-                        "name": "category"
                     },
                     {
                         "name": "color"
@@ -1811,19 +1808,28 @@
                 ],
                 "primaryKey": "geo"
             }
+        },
+        {
+            "name": "ddf--entities--tag",
+            "path": "ddf--entities--tag.csv",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "tag"
+                    },
+                    {
+                        "name": "name"
+                    },
+                    {
+                        "name": "parent"
+                    }
+                ],
+                "primaryKey": "tag"
+            }
         }
     ],
     "ddfSchema": {
         "concepts": [
-            {
-                "primaryKey": [
-                    "concept"
-                ],
-                "value": "category",
-                "resources": [
-                    "ddf--concepts"
-                ]
-            },
             {
                 "primaryKey": [
                     "concept"
@@ -2585,6 +2591,15 @@
             },
             {
                 "primaryKey": [
+                    "tag"
+                ],
+                "value": "name",
+                "resources": [
+                    "ddf--entities--tag"
+                ]
+            },
+            {
+                "primaryKey": [
                     "un_sdg_ldc"
                 ],
                 "value": "name",
@@ -2700,6 +2715,15 @@
                 "value": "name_short",
                 "resources": [
                     "ddf--entities--geo--world_6region"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "tag"
+                ],
+                "value": "parent",
+                "resources": [
+                    "ddf--entities--tag"
                 ]
             },
             {
