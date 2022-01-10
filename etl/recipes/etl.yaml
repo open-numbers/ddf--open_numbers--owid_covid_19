@@ -5,6 +5,8 @@ info:
         - &d1 open-numbers/ddf--owid--covid_19
         - &d2 open-numbers/ddf--open_numbers
 
+config:
+    procedure_dir: ./procedures
 
 ingredients:
   - id: owid-locations
@@ -83,15 +85,37 @@ cooking:
           date: time
         not_found: include
       result: owid-concepts-renamed
-    - procedure: merge
+    - procedure: create_tags.in_concept
       ingredients:
         - owid-concepts-renamed
+      options:
+        out_column: tags
+        input_column: category
+      result: owid-concepts-renamed-with-tags
+    - procedure: merge
+      ingredients:
+        - owid-concepts-renamed-with-tags
         - on-concepts
       options:
         deep: true
-      result: concepts-final
+      result: concepts-merged
+    - procedure: filter
+      ingredients:
+        - concepts-merged
+      options:
+        item:
+          $nin:
+            - category
+      result: concepts_final
 
   entities:
+    - procedure: create_tags.in_entity
+      ingredients:
+        - owid-concepts-renamed
+      options:
+        input_column: category
+      result: tag-entity
     - procedure: serve
       ingredients:
         - on-entities
+        - tag-entity
