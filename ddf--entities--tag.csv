@@ -1,0 +1,10 @@
+tag,name,parent
+confirmed_cases,Confirmed cases,
+confirmed_deaths,Confirmed deaths,
+excess_mortality,Excess mortality,
+hospital_icu,Hospital & ICU,
+others,Others,
+policy_responses,Policy responses,
+reproduction_rate,Reproduction rate,
+tests_positivity,Tests & positivity,
+vaccinations,Vaccinations,
