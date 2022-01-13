@@ -20,7 +20,7 @@ logger = logging.getLogger('custom_procedure')
 
 @debuggable
 def rolling_average(chef: Chef, ingredients: List[DataPointIngredient], result,
-                    days, not_calculate) -> DataPointIngredient:
+                    days, groupby, not_calculate) -> DataPointIngredient:
     ingredient = ingredients[0]
     logger.info("calculating {} days averages for {}".format(days, ingredient.id))
     di = ingredient.compute()
@@ -32,7 +32,7 @@ def rolling_average(chef: Chef, ingredients: List[DataPointIngredient], result,
             k_new = k + '_smoothed'
             df_ = df.copy()
             logger.info(k)
-            df_[k_new] = df_.groupby(keys)[k].transform(lambda x: x.rolling(days).mean())
+            df_[k_new] = df_.groupby(groupby)[k].transform(lambda x: x.rolling(days, 1).mean())
             df_ = df_.drop(columns=[k])
             new_data[k_new] = df_
 

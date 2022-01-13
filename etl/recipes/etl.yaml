@@ -78,6 +78,7 @@ cooking:
       ingredients:
         - datapoints-all-translated
       options:
+        groupby: geo
         days: 7
         not_calculate:
           - new_cases
