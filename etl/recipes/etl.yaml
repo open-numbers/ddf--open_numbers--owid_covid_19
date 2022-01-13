@@ -72,6 +72,30 @@ cooking:
         dictionary:
           location: geo
           date: time
+      result: datapoints-all-translated
+
+    - procedure: smooth.rolling_average
+      ingredients:
+        - datapoints-all-translated
+      options:
+        days: 7
+        not_calculate:
+          - new_cases
+          - new_deaths
+          - new_cases_per_million
+          - new_deaths_per_million
+          - new_tests
+          - new_tests_per_thousand
+          - new_vaccinations
+          - new_people_vaccinated
+          - new_people_vaccinated_per_hundred
+          - tests_units
+      result: datapoints-smoothed
+
+    - procedure: merge
+      ingredients:
+        - datapoints-all-translated
+        - datapoints-smoothed
       result: datapoints-final
 
   concepts:
@@ -92,9 +116,15 @@ cooking:
         out_column: tags
         input_column: category
       result: owid-concepts-renamed-with-tags
+    - procedure: smooth.gen_concept
+      ingredients:
+        - datapoints-smoothed
+      options:
+        base: owid-concepts-renamed-with-tags
+      result: concepts-with-all-indicators
     - procedure: merge
       ingredients:
-        - owid-concepts-renamed-with-tags
+        - concepts-with-all-indicators
         - on-concepts
       options:
         deep: true
