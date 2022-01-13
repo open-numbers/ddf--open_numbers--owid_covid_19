@@ -8,7 +8,7 @@
     "description": "OWID covid 19 dataset in open-numbers namespace",
     "author": "Gapminder",
     "license": "CC-BY-4.0",
-    "created": "2022-01-12T12:48:24.547940+00:00",
+    "created": "2022-01-13T13:54:02.440559+00:00",
     "translations": [],
     "version": "0.0.1",
     "resources": [
@@ -82,6 +82,27 @@
             }
         },
         {
+            "name": "ddf--datapoints--aged_65_older_smoothed--by--geo--time",
+            "path": "ddf--datapoints--aged_65_older_smoothed--by--geo--time.csv",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "geo"
+                    },
+                    {
+                        "name": "time"
+                    },
+                    {
+                        "name": "aged_65_older_smoothed"
+                    }
+                ],
+                "primaryKey": [
+                    "geo",
+                    "time"
+                ]
+            }
+        },
+        {
             "name": "ddf--datapoints--aged_70_older--by--geo--time",
             "path": "ddf--datapoints--aged_70_older--by--geo--time.csv",
             "schema": {
@@ -94,6 +115,27 @@
                     },
                     {
                         "name": "aged_70_older"
+                    }
+                ],
+                "primaryKey": [
+                    "geo",
+                    "time"
+                ]
+            }
+        },
+        {
+            "name": "ddf--datapoints--aged_70_older_smoothed--by--geo--time",
+            "path": "ddf--datapoints--aged_70_older_smoothed--by--geo--time.csv",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "geo"
+                    },
+                    {
+                        "name": "time"
+                    },
+                    {
+                        "name": "aged_70_older_smoothed"
                     }
                 ],
                 "primaryKey": [
@@ -124,6 +166,27 @@
             }
         },
         {
+            "name": "ddf--datapoints--cardiovasc_death_rate_smoothed--by--geo--time",
+            "path": "ddf--datapoints--cardiovasc_death_rate_smoothed--by--geo--time.csv",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "geo"
+                    },
+                    {
+                        "name": "time"
+                    },
+                    {
+                        "name": "cardiovasc_death_rate_smoothed"
+                    }
+                ],
+                "primaryKey": [
+                    "geo",
+                    "time"
+                ]
+            }
+        },
+        {
             "name": "ddf--datapoints--diabetes_prevalence--by--geo--time",
             "path": "ddf--datapoints--diabetes_prevalence--by--geo--time.csv",
             "schema": {
@@ -136,6 +199,27 @@
                     },
                     {
                         "name": "diabetes_prevalence"
+                    }
+                ],
+                "primaryKey": [
+                    "geo",
+                    "time"
+                ]
+            }
+        },
+        {
+            "name": "ddf--datapoints--diabetes_prevalence_smoothed--by--geo--time",
+            "path": "ddf--datapoints--diabetes_prevalence_smoothed--by--geo--time.csv",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "geo"
+                    },
+                    {
+                        "name": "time"
+                    },
+                    {
+                        "name": "diabetes_prevalence_smoothed"
                     }
                 ],
                 "primaryKey": [
@@ -208,6 +292,27 @@
             }
         },
         {
+            "name": "ddf--datapoints--excess_mortality_cumulative_absolute_smoothed--by--geo--time",
+            "path": "ddf--datapoints--excess_mortality_cumulative_absolute_smoothed--by--geo--time.csv",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "geo"
+                    },
+                    {
+                        "name": "time"
+                    },
+                    {
+                        "name": "excess_mortality_cumulative_absolute_smoothed"
+                    }
+                ],
+                "primaryKey": [
+                    "geo",
+                    "time"
+                ]
+            }
+        },
+        {
             "name": "ddf--datapoints--excess_mortality_cumulative_per_million--by--geo--time",
             "path": "ddf--datapoints--excess_mortality_cumulative_per_million--by--geo--time.csv",
             "schema": {
@@ -220,6 +325,69 @@
                     },
                     {
                         "name": "excess_mortality_cumulative_per_million"
+                    }
+                ],
+                "primaryKey": [
+                    "geo",
+                    "time"
+                ]
+            }
+        },
+        {
+            "name": "ddf--datapoints--excess_mortality_cumulative_per_million_smoothed--by--geo--time",
+            "path": "ddf--datapoints--excess_mortality_cumulative_per_million_smoothed--by--geo--time.csv",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "geo"
+                    },
+                    {
+                        "name": "time"
+                    },
+                    {
+                        "name": "excess_mortality_cumulative_per_million_smoothed"
+                    }
+                ],
+                "primaryKey": [
+                    "geo",
+                    "time"
+                ]
+            }
+        },
+        {
+            "name": "ddf--datapoints--excess_mortality_cumulative_smoothed--by--geo--time",
+            "path": "ddf--datapoints--excess_mortality_cumulative_smoothed--by--geo--time.csv",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "geo"
+                    },
+                    {
+                        "name": "time"
+                    },
+                    {
+                        "name": "excess_mortality_cumulative_smoothed"
+                    }
+                ],
+                "primaryKey": [
+                    "geo",
+                    "time"
+                ]
+            }
+        },
+        {
+            "name": "ddf--datapoints--excess_mortality_smoothed--by--geo--time",
+            "path": "ddf--datapoints--excess_mortality_smoothed--by--geo--time.csv",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "geo"
+                    },
+                    {
+                        "name": "time"
+                    },
+                    {
+                        "name": "excess_mortality_smoothed"
                     }
                 ],
                 "primaryKey": [
@@ -250,6 +418,27 @@
             }
         },
         {
+            "name": "ddf--datapoints--extreme_poverty_smoothed--by--geo--time",
+            "path": "ddf--datapoints--extreme_poverty_smoothed--by--geo--time.csv",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "geo"
+                    },
+                    {
+                        "name": "time"
+                    },
+                    {
+                        "name": "extreme_poverty_smoothed"
+                    }
+                ],
+                "primaryKey": [
+                    "geo",
+                    "time"
+                ]
+            }
+        },
+        {
             "name": "ddf--datapoints--female_smokers--by--geo--time",
             "path": "ddf--datapoints--female_smokers--by--geo--time.csv",
             "schema": {
@@ -262,6 +451,27 @@
                     },
                     {
                         "name": "female_smokers"
+                    }
+                ],
+                "primaryKey": [
+                    "geo",
+                    "time"
+                ]
+            }
+        },
+        {
+            "name": "ddf--datapoints--female_smokers_smoothed--by--geo--time",
+            "path": "ddf--datapoints--female_smokers_smoothed--by--geo--time.csv",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "geo"
+                    },
+                    {
+                        "name": "time"
+                    },
+                    {
+                        "name": "female_smokers_smoothed"
                     }
                 ],
                 "primaryKey": [
@@ -292,6 +502,27 @@
             }
         },
         {
+            "name": "ddf--datapoints--gdp_per_capita_smoothed--by--geo--time",
+            "path": "ddf--datapoints--gdp_per_capita_smoothed--by--geo--time.csv",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "geo"
+                    },
+                    {
+                        "name": "time"
+                    },
+                    {
+                        "name": "gdp_per_capita_smoothed"
+                    }
+                ],
+                "primaryKey": [
+                    "geo",
+                    "time"
+                ]
+            }
+        },
+        {
             "name": "ddf--datapoints--handwashing_facilities--by--geo--time",
             "path": "ddf--datapoints--handwashing_facilities--by--geo--time.csv",
             "schema": {
@@ -304,6 +535,27 @@
                     },
                     {
                         "name": "handwashing_facilities"
+                    }
+                ],
+                "primaryKey": [
+                    "geo",
+                    "time"
+                ]
+            }
+        },
+        {
+            "name": "ddf--datapoints--handwashing_facilities_smoothed--by--geo--time",
+            "path": "ddf--datapoints--handwashing_facilities_smoothed--by--geo--time.csv",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "geo"
+                    },
+                    {
+                        "name": "time"
+                    },
+                    {
+                        "name": "handwashing_facilities_smoothed"
                     }
                 ],
                 "primaryKey": [
@@ -355,6 +607,48 @@
             }
         },
         {
+            "name": "ddf--datapoints--hosp_patients_per_million_smoothed--by--geo--time",
+            "path": "ddf--datapoints--hosp_patients_per_million_smoothed--by--geo--time.csv",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "geo"
+                    },
+                    {
+                        "name": "time"
+                    },
+                    {
+                        "name": "hosp_patients_per_million_smoothed"
+                    }
+                ],
+                "primaryKey": [
+                    "geo",
+                    "time"
+                ]
+            }
+        },
+        {
+            "name": "ddf--datapoints--hosp_patients_smoothed--by--geo--time",
+            "path": "ddf--datapoints--hosp_patients_smoothed--by--geo--time.csv",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "geo"
+                    },
+                    {
+                        "name": "time"
+                    },
+                    {
+                        "name": "hosp_patients_smoothed"
+                    }
+                ],
+                "primaryKey": [
+                    "geo",
+                    "time"
+                ]
+            }
+        },
+        {
             "name": "ddf--datapoints--hospital_beds_per_thousand--by--geo--time",
             "path": "ddf--datapoints--hospital_beds_per_thousand--by--geo--time.csv",
             "schema": {
@@ -376,6 +670,27 @@
             }
         },
         {
+            "name": "ddf--datapoints--hospital_beds_per_thousand_smoothed--by--geo--time",
+            "path": "ddf--datapoints--hospital_beds_per_thousand_smoothed--by--geo--time.csv",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "geo"
+                    },
+                    {
+                        "name": "time"
+                    },
+                    {
+                        "name": "hospital_beds_per_thousand_smoothed"
+                    }
+                ],
+                "primaryKey": [
+                    "geo",
+                    "time"
+                ]
+            }
+        },
+        {
             "name": "ddf--datapoints--human_development_index--by--geo--time",
             "path": "ddf--datapoints--human_development_index--by--geo--time.csv",
             "schema": {
@@ -388,6 +703,27 @@
                     },
                     {
                         "name": "human_development_index"
+                    }
+                ],
+                "primaryKey": [
+                    "geo",
+                    "time"
+                ]
+            }
+        },
+        {
+            "name": "ddf--datapoints--human_development_index_smoothed--by--geo--time",
+            "path": "ddf--datapoints--human_development_index_smoothed--by--geo--time.csv",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "geo"
+                    },
+                    {
+                        "name": "time"
+                    },
+                    {
+                        "name": "human_development_index_smoothed"
                     }
                 ],
                 "primaryKey": [
@@ -439,6 +775,48 @@
             }
         },
         {
+            "name": "ddf--datapoints--icu_patients_per_million_smoothed--by--geo--time",
+            "path": "ddf--datapoints--icu_patients_per_million_smoothed--by--geo--time.csv",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "geo"
+                    },
+                    {
+                        "name": "time"
+                    },
+                    {
+                        "name": "icu_patients_per_million_smoothed"
+                    }
+                ],
+                "primaryKey": [
+                    "geo",
+                    "time"
+                ]
+            }
+        },
+        {
+            "name": "ddf--datapoints--icu_patients_smoothed--by--geo--time",
+            "path": "ddf--datapoints--icu_patients_smoothed--by--geo--time.csv",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "geo"
+                    },
+                    {
+                        "name": "time"
+                    },
+                    {
+                        "name": "icu_patients_smoothed"
+                    }
+                ],
+                "primaryKey": [
+                    "geo",
+                    "time"
+                ]
+            }
+        },
+        {
             "name": "ddf--datapoints--life_expectancy--by--geo--time",
             "path": "ddf--datapoints--life_expectancy--by--geo--time.csv",
             "schema": {
@@ -451,6 +829,27 @@
                     },
                     {
                         "name": "life_expectancy"
+                    }
+                ],
+                "primaryKey": [
+                    "geo",
+                    "time"
+                ]
+            }
+        },
+        {
+            "name": "ddf--datapoints--life_expectancy_smoothed--by--geo--time",
+            "path": "ddf--datapoints--life_expectancy_smoothed--by--geo--time.csv",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "geo"
+                    },
+                    {
+                        "name": "time"
+                    },
+                    {
+                        "name": "life_expectancy_smoothed"
                     }
                 ],
                 "primaryKey": [
@@ -481,6 +880,27 @@
             }
         },
         {
+            "name": "ddf--datapoints--male_smokers_smoothed--by--geo--time",
+            "path": "ddf--datapoints--male_smokers_smoothed--by--geo--time.csv",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "geo"
+                    },
+                    {
+                        "name": "time"
+                    },
+                    {
+                        "name": "male_smokers_smoothed"
+                    }
+                ],
+                "primaryKey": [
+                    "geo",
+                    "time"
+                ]
+            }
+        },
+        {
             "name": "ddf--datapoints--median_age--by--geo--time",
             "path": "ddf--datapoints--median_age--by--geo--time.csv",
             "schema": {
@@ -493,6 +913,27 @@
                     },
                     {
                         "name": "median_age"
+                    }
+                ],
+                "primaryKey": [
+                    "geo",
+                    "time"
+                ]
+            }
+        },
+        {
+            "name": "ddf--datapoints--median_age_smoothed--by--geo--time",
+            "path": "ddf--datapoints--median_age_smoothed--by--geo--time.csv",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "geo"
+                    },
+                    {
+                        "name": "time"
+                    },
+                    {
+                        "name": "median_age_smoothed"
                     }
                 ],
                 "primaryKey": [
@@ -901,6 +1342,48 @@
             }
         },
         {
+            "name": "ddf--datapoints--people_fully_vaccinated_per_hundred_smoothed--by--geo--time",
+            "path": "ddf--datapoints--people_fully_vaccinated_per_hundred_smoothed--by--geo--time.csv",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "geo"
+                    },
+                    {
+                        "name": "time"
+                    },
+                    {
+                        "name": "people_fully_vaccinated_per_hundred_smoothed"
+                    }
+                ],
+                "primaryKey": [
+                    "geo",
+                    "time"
+                ]
+            }
+        },
+        {
+            "name": "ddf--datapoints--people_fully_vaccinated_smoothed--by--geo--time",
+            "path": "ddf--datapoints--people_fully_vaccinated_smoothed--by--geo--time.csv",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "geo"
+                    },
+                    {
+                        "name": "time"
+                    },
+                    {
+                        "name": "people_fully_vaccinated_smoothed"
+                    }
+                ],
+                "primaryKey": [
+                    "geo",
+                    "time"
+                ]
+            }
+        },
+        {
             "name": "ddf--datapoints--people_vaccinated--by--geo--time",
             "path": "ddf--datapoints--people_vaccinated--by--geo--time.csv",
             "schema": {
@@ -934,6 +1417,48 @@
                     },
                     {
                         "name": "people_vaccinated_per_hundred"
+                    }
+                ],
+                "primaryKey": [
+                    "geo",
+                    "time"
+                ]
+            }
+        },
+        {
+            "name": "ddf--datapoints--people_vaccinated_per_hundred_smoothed--by--geo--time",
+            "path": "ddf--datapoints--people_vaccinated_per_hundred_smoothed--by--geo--time.csv",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "geo"
+                    },
+                    {
+                        "name": "time"
+                    },
+                    {
+                        "name": "people_vaccinated_per_hundred_smoothed"
+                    }
+                ],
+                "primaryKey": [
+                    "geo",
+                    "time"
+                ]
+            }
+        },
+        {
+            "name": "ddf--datapoints--people_vaccinated_smoothed--by--geo--time",
+            "path": "ddf--datapoints--people_vaccinated_smoothed--by--geo--time.csv",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "geo"
+                    },
+                    {
+                        "name": "time"
+                    },
+                    {
+                        "name": "people_vaccinated_smoothed"
                     }
                 ],
                 "primaryKey": [
@@ -985,6 +1510,48 @@
             }
         },
         {
+            "name": "ddf--datapoints--population_density_smoothed--by--geo--time",
+            "path": "ddf--datapoints--population_density_smoothed--by--geo--time.csv",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "geo"
+                    },
+                    {
+                        "name": "time"
+                    },
+                    {
+                        "name": "population_density_smoothed"
+                    }
+                ],
+                "primaryKey": [
+                    "geo",
+                    "time"
+                ]
+            }
+        },
+        {
+            "name": "ddf--datapoints--population_smoothed--by--geo--time",
+            "path": "ddf--datapoints--population_smoothed--by--geo--time.csv",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "geo"
+                    },
+                    {
+                        "name": "time"
+                    },
+                    {
+                        "name": "population_smoothed"
+                    }
+                ],
+                "primaryKey": [
+                    "geo",
+                    "time"
+                ]
+            }
+        },
+        {
             "name": "ddf--datapoints--positive_rate--by--geo--time",
             "path": "ddf--datapoints--positive_rate--by--geo--time.csv",
             "schema": {
@@ -997,6 +1564,27 @@
                     },
                     {
                         "name": "positive_rate"
+                    }
+                ],
+                "primaryKey": [
+                    "geo",
+                    "time"
+                ]
+            }
+        },
+        {
+            "name": "ddf--datapoints--positive_rate_smoothed--by--geo--time",
+            "path": "ddf--datapoints--positive_rate_smoothed--by--geo--time.csv",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "geo"
+                    },
+                    {
+                        "name": "time"
+                    },
+                    {
+                        "name": "positive_rate_smoothed"
                     }
                 ],
                 "primaryKey": [
@@ -1027,6 +1615,27 @@
             }
         },
         {
+            "name": "ddf--datapoints--reproduction_rate_smoothed--by--geo--time",
+            "path": "ddf--datapoints--reproduction_rate_smoothed--by--geo--time.csv",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "geo"
+                    },
+                    {
+                        "name": "time"
+                    },
+                    {
+                        "name": "reproduction_rate_smoothed"
+                    }
+                ],
+                "primaryKey": [
+                    "geo",
+                    "time"
+                ]
+            }
+        },
+        {
             "name": "ddf--datapoints--stringency_index--by--geo--time",
             "path": "ddf--datapoints--stringency_index--by--geo--time.csv",
             "schema": {
@@ -1048,6 +1657,27 @@
             }
         },
         {
+            "name": "ddf--datapoints--stringency_index_smoothed--by--geo--time",
+            "path": "ddf--datapoints--stringency_index_smoothed--by--geo--time.csv",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "geo"
+                    },
+                    {
+                        "name": "time"
+                    },
+                    {
+                        "name": "stringency_index_smoothed"
+                    }
+                ],
+                "primaryKey": [
+                    "geo",
+                    "time"
+                ]
+            }
+        },
+        {
             "name": "ddf--datapoints--tests_per_case--by--geo--time",
             "path": "ddf--datapoints--tests_per_case--by--geo--time.csv",
             "schema": {
@@ -1060,6 +1690,27 @@
                     },
                     {
                         "name": "tests_per_case"
+                    }
+                ],
+                "primaryKey": [
+                    "geo",
+                    "time"
+                ]
+            }
+        },
+        {
+            "name": "ddf--datapoints--tests_per_case_smoothed--by--geo--time",
+            "path": "ddf--datapoints--tests_per_case_smoothed--by--geo--time.csv",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "geo"
+                    },
+                    {
+                        "name": "time"
+                    },
+                    {
+                        "name": "tests_per_case_smoothed"
                     }
                 ],
                 "primaryKey": [
@@ -1132,6 +1783,48 @@
             }
         },
         {
+            "name": "ddf--datapoints--total_boosters_per_hundred_smoothed--by--geo--time",
+            "path": "ddf--datapoints--total_boosters_per_hundred_smoothed--by--geo--time.csv",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "geo"
+                    },
+                    {
+                        "name": "time"
+                    },
+                    {
+                        "name": "total_boosters_per_hundred_smoothed"
+                    }
+                ],
+                "primaryKey": [
+                    "geo",
+                    "time"
+                ]
+            }
+        },
+        {
+            "name": "ddf--datapoints--total_boosters_smoothed--by--geo--time",
+            "path": "ddf--datapoints--total_boosters_smoothed--by--geo--time.csv",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "geo"
+                    },
+                    {
+                        "name": "time"
+                    },
+                    {
+                        "name": "total_boosters_smoothed"
+                    }
+                ],
+                "primaryKey": [
+                    "geo",
+                    "time"
+                ]
+            }
+        },
+        {
             "name": "ddf--datapoints--total_cases--by--geo--time",
             "path": "ddf--datapoints--total_cases--by--geo--time.csv",
             "schema": {
@@ -1165,6 +1858,48 @@
                     },
                     {
                         "name": "total_cases_per_million"
+                    }
+                ],
+                "primaryKey": [
+                    "geo",
+                    "time"
+                ]
+            }
+        },
+        {
+            "name": "ddf--datapoints--total_cases_per_million_smoothed--by--geo--time",
+            "path": "ddf--datapoints--total_cases_per_million_smoothed--by--geo--time.csv",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "geo"
+                    },
+                    {
+                        "name": "time"
+                    },
+                    {
+                        "name": "total_cases_per_million_smoothed"
+                    }
+                ],
+                "primaryKey": [
+                    "geo",
+                    "time"
+                ]
+            }
+        },
+        {
+            "name": "ddf--datapoints--total_cases_smoothed--by--geo--time",
+            "path": "ddf--datapoints--total_cases_smoothed--by--geo--time.csv",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "geo"
+                    },
+                    {
+                        "name": "time"
+                    },
+                    {
+                        "name": "total_cases_smoothed"
                     }
                 ],
                 "primaryKey": [
@@ -1216,6 +1951,48 @@
             }
         },
         {
+            "name": "ddf--datapoints--total_deaths_per_million_smoothed--by--geo--time",
+            "path": "ddf--datapoints--total_deaths_per_million_smoothed--by--geo--time.csv",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "geo"
+                    },
+                    {
+                        "name": "time"
+                    },
+                    {
+                        "name": "total_deaths_per_million_smoothed"
+                    }
+                ],
+                "primaryKey": [
+                    "geo",
+                    "time"
+                ]
+            }
+        },
+        {
+            "name": "ddf--datapoints--total_deaths_smoothed--by--geo--time",
+            "path": "ddf--datapoints--total_deaths_smoothed--by--geo--time.csv",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "geo"
+                    },
+                    {
+                        "name": "time"
+                    },
+                    {
+                        "name": "total_deaths_smoothed"
+                    }
+                ],
+                "primaryKey": [
+                    "geo",
+                    "time"
+                ]
+            }
+        },
+        {
             "name": "ddf--datapoints--total_tests--by--geo--time",
             "path": "ddf--datapoints--total_tests--by--geo--time.csv",
             "schema": {
@@ -1249,6 +2026,48 @@
                     },
                     {
                         "name": "total_tests_per_thousand"
+                    }
+                ],
+                "primaryKey": [
+                    "geo",
+                    "time"
+                ]
+            }
+        },
+        {
+            "name": "ddf--datapoints--total_tests_per_thousand_smoothed--by--geo--time",
+            "path": "ddf--datapoints--total_tests_per_thousand_smoothed--by--geo--time.csv",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "geo"
+                    },
+                    {
+                        "name": "time"
+                    },
+                    {
+                        "name": "total_tests_per_thousand_smoothed"
+                    }
+                ],
+                "primaryKey": [
+                    "geo",
+                    "time"
+                ]
+            }
+        },
+        {
+            "name": "ddf--datapoints--total_tests_smoothed--by--geo--time",
+            "path": "ddf--datapoints--total_tests_smoothed--by--geo--time.csv",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "geo"
+                    },
+                    {
+                        "name": "time"
+                    },
+                    {
+                        "name": "total_tests_smoothed"
                     }
                 ],
                 "primaryKey": [
@@ -1300,6 +2119,48 @@
             }
         },
         {
+            "name": "ddf--datapoints--total_vaccinations_per_hundred_smoothed--by--geo--time",
+            "path": "ddf--datapoints--total_vaccinations_per_hundred_smoothed--by--geo--time.csv",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "geo"
+                    },
+                    {
+                        "name": "time"
+                    },
+                    {
+                        "name": "total_vaccinations_per_hundred_smoothed"
+                    }
+                ],
+                "primaryKey": [
+                    "geo",
+                    "time"
+                ]
+            }
+        },
+        {
+            "name": "ddf--datapoints--total_vaccinations_smoothed--by--geo--time",
+            "path": "ddf--datapoints--total_vaccinations_smoothed--by--geo--time.csv",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "geo"
+                    },
+                    {
+                        "name": "time"
+                    },
+                    {
+                        "name": "total_vaccinations_smoothed"
+                    }
+                ],
+                "primaryKey": [
+                    "geo",
+                    "time"
+                ]
+            }
+        },
+        {
             "name": "ddf--datapoints--weekly_hosp_admissions--by--geo--time",
             "path": "ddf--datapoints--weekly_hosp_admissions--by--geo--time.csv",
             "schema": {
@@ -1342,6 +2203,48 @@
             }
         },
         {
+            "name": "ddf--datapoints--weekly_hosp_admissions_per_million_smoothed--by--geo--time",
+            "path": "ddf--datapoints--weekly_hosp_admissions_per_million_smoothed--by--geo--time.csv",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "geo"
+                    },
+                    {
+                        "name": "time"
+                    },
+                    {
+                        "name": "weekly_hosp_admissions_per_million_smoothed"
+                    }
+                ],
+                "primaryKey": [
+                    "geo",
+                    "time"
+                ]
+            }
+        },
+        {
+            "name": "ddf--datapoints--weekly_hosp_admissions_smoothed--by--geo--time",
+            "path": "ddf--datapoints--weekly_hosp_admissions_smoothed--by--geo--time.csv",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "geo"
+                    },
+                    {
+                        "name": "time"
+                    },
+                    {
+                        "name": "weekly_hosp_admissions_smoothed"
+                    }
+                ],
+                "primaryKey": [
+                    "geo",
+                    "time"
+                ]
+            }
+        },
+        {
             "name": "ddf--datapoints--weekly_icu_admissions--by--geo--time",
             "path": "ddf--datapoints--weekly_icu_admissions--by--geo--time.csv",
             "schema": {
@@ -1375,6 +2278,48 @@
                     },
                     {
                         "name": "weekly_icu_admissions_per_million"
+                    }
+                ],
+                "primaryKey": [
+                    "geo",
+                    "time"
+                ]
+            }
+        },
+        {
+            "name": "ddf--datapoints--weekly_icu_admissions_per_million_smoothed--by--geo--time",
+            "path": "ddf--datapoints--weekly_icu_admissions_per_million_smoothed--by--geo--time.csv",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "geo"
+                    },
+                    {
+                        "name": "time"
+                    },
+                    {
+                        "name": "weekly_icu_admissions_per_million_smoothed"
+                    }
+                ],
+                "primaryKey": [
+                    "geo",
+                    "time"
+                ]
+            }
+        },
+        {
+            "name": "ddf--datapoints--weekly_icu_admissions_smoothed--by--geo--time",
+            "path": "ddf--datapoints--weekly_icu_admissions_smoothed--by--geo--time.csv",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "geo"
+                    },
+                    {
+                        "name": "time"
+                    },
+                    {
+                        "name": "weekly_icu_admissions_smoothed"
                     }
                 ],
                 "primaryKey": [
@@ -3055,6 +4000,26 @@
                     "country",
                     "time"
                 ],
+                "value": "aged_65_older_smoothed",
+                "resources": [
+                    "ddf--datapoints--aged_65_older_smoothed--by--geo--time"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "geo",
+                    "time"
+                ],
+                "value": "aged_65_older_smoothed",
+                "resources": [
+                    "ddf--datapoints--aged_65_older_smoothed--by--geo--time"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "country",
+                    "time"
+                ],
                 "value": "aged_70_older",
                 "resources": [
                     "ddf--datapoints--aged_70_older--by--geo--time"
@@ -3068,6 +4033,26 @@
                 "value": "aged_70_older",
                 "resources": [
                     "ddf--datapoints--aged_70_older--by--geo--time"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "country",
+                    "time"
+                ],
+                "value": "aged_70_older_smoothed",
+                "resources": [
+                    "ddf--datapoints--aged_70_older_smoothed--by--geo--time"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "geo",
+                    "time"
+                ],
+                "value": "aged_70_older_smoothed",
+                "resources": [
+                    "ddf--datapoints--aged_70_older_smoothed--by--geo--time"
                 ]
             },
             {
@@ -3095,6 +4080,26 @@
                     "country",
                     "time"
                 ],
+                "value": "cardiovasc_death_rate_smoothed",
+                "resources": [
+                    "ddf--datapoints--cardiovasc_death_rate_smoothed--by--geo--time"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "geo",
+                    "time"
+                ],
+                "value": "cardiovasc_death_rate_smoothed",
+                "resources": [
+                    "ddf--datapoints--cardiovasc_death_rate_smoothed--by--geo--time"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "country",
+                    "time"
+                ],
                 "value": "diabetes_prevalence",
                 "resources": [
                     "ddf--datapoints--diabetes_prevalence--by--geo--time"
@@ -3108,6 +4113,26 @@
                 "value": "diabetes_prevalence",
                 "resources": [
                     "ddf--datapoints--diabetes_prevalence--by--geo--time"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "country",
+                    "time"
+                ],
+                "value": "diabetes_prevalence_smoothed",
+                "resources": [
+                    "ddf--datapoints--diabetes_prevalence_smoothed--by--geo--time"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "geo",
+                    "time"
+                ],
+                "value": "diabetes_prevalence_smoothed",
+                "resources": [
+                    "ddf--datapoints--diabetes_prevalence_smoothed--by--geo--time"
                 ]
             },
             {
@@ -3175,6 +4200,26 @@
                     "country",
                     "time"
                 ],
+                "value": "excess_mortality_cumulative_absolute_smoothed",
+                "resources": [
+                    "ddf--datapoints--excess_mortality_cumulative_absolute_smoothed--by--geo--time"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "geo",
+                    "time"
+                ],
+                "value": "excess_mortality_cumulative_absolute_smoothed",
+                "resources": [
+                    "ddf--datapoints--excess_mortality_cumulative_absolute_smoothed--by--geo--time"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "country",
+                    "time"
+                ],
                 "value": "excess_mortality_cumulative_per_million",
                 "resources": [
                     "ddf--datapoints--excess_mortality_cumulative_per_million--by--geo--time"
@@ -3188,6 +4233,66 @@
                 "value": "excess_mortality_cumulative_per_million",
                 "resources": [
                     "ddf--datapoints--excess_mortality_cumulative_per_million--by--geo--time"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "country",
+                    "time"
+                ],
+                "value": "excess_mortality_cumulative_per_million_smoothed",
+                "resources": [
+                    "ddf--datapoints--excess_mortality_cumulative_per_million_smoothed--by--geo--time"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "geo",
+                    "time"
+                ],
+                "value": "excess_mortality_cumulative_per_million_smoothed",
+                "resources": [
+                    "ddf--datapoints--excess_mortality_cumulative_per_million_smoothed--by--geo--time"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "country",
+                    "time"
+                ],
+                "value": "excess_mortality_cumulative_smoothed",
+                "resources": [
+                    "ddf--datapoints--excess_mortality_cumulative_smoothed--by--geo--time"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "geo",
+                    "time"
+                ],
+                "value": "excess_mortality_cumulative_smoothed",
+                "resources": [
+                    "ddf--datapoints--excess_mortality_cumulative_smoothed--by--geo--time"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "country",
+                    "time"
+                ],
+                "value": "excess_mortality_smoothed",
+                "resources": [
+                    "ddf--datapoints--excess_mortality_smoothed--by--geo--time"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "geo",
+                    "time"
+                ],
+                "value": "excess_mortality_smoothed",
+                "resources": [
+                    "ddf--datapoints--excess_mortality_smoothed--by--geo--time"
                 ]
             },
             {
@@ -3215,6 +4320,26 @@
                     "country",
                     "time"
                 ],
+                "value": "extreme_poverty_smoothed",
+                "resources": [
+                    "ddf--datapoints--extreme_poverty_smoothed--by--geo--time"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "geo",
+                    "time"
+                ],
+                "value": "extreme_poverty_smoothed",
+                "resources": [
+                    "ddf--datapoints--extreme_poverty_smoothed--by--geo--time"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "country",
+                    "time"
+                ],
                 "value": "female_smokers",
                 "resources": [
                     "ddf--datapoints--female_smokers--by--geo--time"
@@ -3228,6 +4353,26 @@
                 "value": "female_smokers",
                 "resources": [
                     "ddf--datapoints--female_smokers--by--geo--time"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "country",
+                    "time"
+                ],
+                "value": "female_smokers_smoothed",
+                "resources": [
+                    "ddf--datapoints--female_smokers_smoothed--by--geo--time"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "geo",
+                    "time"
+                ],
+                "value": "female_smokers_smoothed",
+                "resources": [
+                    "ddf--datapoints--female_smokers_smoothed--by--geo--time"
                 ]
             },
             {
@@ -3255,6 +4400,26 @@
                     "country",
                     "time"
                 ],
+                "value": "gdp_per_capita_smoothed",
+                "resources": [
+                    "ddf--datapoints--gdp_per_capita_smoothed--by--geo--time"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "geo",
+                    "time"
+                ],
+                "value": "gdp_per_capita_smoothed",
+                "resources": [
+                    "ddf--datapoints--gdp_per_capita_smoothed--by--geo--time"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "country",
+                    "time"
+                ],
                 "value": "handwashing_facilities",
                 "resources": [
                     "ddf--datapoints--handwashing_facilities--by--geo--time"
@@ -3268,6 +4433,26 @@
                 "value": "handwashing_facilities",
                 "resources": [
                     "ddf--datapoints--handwashing_facilities--by--geo--time"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "country",
+                    "time"
+                ],
+                "value": "handwashing_facilities_smoothed",
+                "resources": [
+                    "ddf--datapoints--handwashing_facilities_smoothed--by--geo--time"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "geo",
+                    "time"
+                ],
+                "value": "handwashing_facilities_smoothed",
+                "resources": [
+                    "ddf--datapoints--handwashing_facilities_smoothed--by--geo--time"
                 ]
             },
             {
@@ -3315,6 +4500,46 @@
                     "country",
                     "time"
                 ],
+                "value": "hosp_patients_per_million_smoothed",
+                "resources": [
+                    "ddf--datapoints--hosp_patients_per_million_smoothed--by--geo--time"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "geo",
+                    "time"
+                ],
+                "value": "hosp_patients_per_million_smoothed",
+                "resources": [
+                    "ddf--datapoints--hosp_patients_per_million_smoothed--by--geo--time"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "country",
+                    "time"
+                ],
+                "value": "hosp_patients_smoothed",
+                "resources": [
+                    "ddf--datapoints--hosp_patients_smoothed--by--geo--time"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "geo",
+                    "time"
+                ],
+                "value": "hosp_patients_smoothed",
+                "resources": [
+                    "ddf--datapoints--hosp_patients_smoothed--by--geo--time"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "country",
+                    "time"
+                ],
                 "value": "hospital_beds_per_thousand",
                 "resources": [
                     "ddf--datapoints--hospital_beds_per_thousand--by--geo--time"
@@ -3335,6 +4560,26 @@
                     "country",
                     "time"
                 ],
+                "value": "hospital_beds_per_thousand_smoothed",
+                "resources": [
+                    "ddf--datapoints--hospital_beds_per_thousand_smoothed--by--geo--time"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "geo",
+                    "time"
+                ],
+                "value": "hospital_beds_per_thousand_smoothed",
+                "resources": [
+                    "ddf--datapoints--hospital_beds_per_thousand_smoothed--by--geo--time"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "country",
+                    "time"
+                ],
                 "value": "human_development_index",
                 "resources": [
                     "ddf--datapoints--human_development_index--by--geo--time"
@@ -3348,6 +4593,26 @@
                 "value": "human_development_index",
                 "resources": [
                     "ddf--datapoints--human_development_index--by--geo--time"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "country",
+                    "time"
+                ],
+                "value": "human_development_index_smoothed",
+                "resources": [
+                    "ddf--datapoints--human_development_index_smoothed--by--geo--time"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "geo",
+                    "time"
+                ],
+                "value": "human_development_index_smoothed",
+                "resources": [
+                    "ddf--datapoints--human_development_index_smoothed--by--geo--time"
                 ]
             },
             {
@@ -3395,6 +4660,46 @@
                     "country",
                     "time"
                 ],
+                "value": "icu_patients_per_million_smoothed",
+                "resources": [
+                    "ddf--datapoints--icu_patients_per_million_smoothed--by--geo--time"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "geo",
+                    "time"
+                ],
+                "value": "icu_patients_per_million_smoothed",
+                "resources": [
+                    "ddf--datapoints--icu_patients_per_million_smoothed--by--geo--time"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "country",
+                    "time"
+                ],
+                "value": "icu_patients_smoothed",
+                "resources": [
+                    "ddf--datapoints--icu_patients_smoothed--by--geo--time"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "geo",
+                    "time"
+                ],
+                "value": "icu_patients_smoothed",
+                "resources": [
+                    "ddf--datapoints--icu_patients_smoothed--by--geo--time"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "country",
+                    "time"
+                ],
                 "value": "life_expectancy",
                 "resources": [
                     "ddf--datapoints--life_expectancy--by--geo--time"
@@ -3408,6 +4713,26 @@
                 "value": "life_expectancy",
                 "resources": [
                     "ddf--datapoints--life_expectancy--by--geo--time"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "country",
+                    "time"
+                ],
+                "value": "life_expectancy_smoothed",
+                "resources": [
+                    "ddf--datapoints--life_expectancy_smoothed--by--geo--time"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "geo",
+                    "time"
+                ],
+                "value": "life_expectancy_smoothed",
+                "resources": [
+                    "ddf--datapoints--life_expectancy_smoothed--by--geo--time"
                 ]
             },
             {
@@ -3435,6 +4760,26 @@
                     "country",
                     "time"
                 ],
+                "value": "male_smokers_smoothed",
+                "resources": [
+                    "ddf--datapoints--male_smokers_smoothed--by--geo--time"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "geo",
+                    "time"
+                ],
+                "value": "male_smokers_smoothed",
+                "resources": [
+                    "ddf--datapoints--male_smokers_smoothed--by--geo--time"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "country",
+                    "time"
+                ],
                 "value": "median_age",
                 "resources": [
                     "ddf--datapoints--median_age--by--geo--time"
@@ -3448,6 +4793,26 @@
                 "value": "median_age",
                 "resources": [
                     "ddf--datapoints--median_age--by--geo--time"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "country",
+                    "time"
+                ],
+                "value": "median_age_smoothed",
+                "resources": [
+                    "ddf--datapoints--median_age_smoothed--by--geo--time"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "geo",
+                    "time"
+                ],
+                "value": "median_age_smoothed",
+                "resources": [
+                    "ddf--datapoints--median_age_smoothed--by--geo--time"
                 ]
             },
             {
@@ -3835,6 +5200,46 @@
                     "country",
                     "time"
                 ],
+                "value": "people_fully_vaccinated_per_hundred_smoothed",
+                "resources": [
+                    "ddf--datapoints--people_fully_vaccinated_per_hundred_smoothed--by--geo--time"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "geo",
+                    "time"
+                ],
+                "value": "people_fully_vaccinated_per_hundred_smoothed",
+                "resources": [
+                    "ddf--datapoints--people_fully_vaccinated_per_hundred_smoothed--by--geo--time"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "country",
+                    "time"
+                ],
+                "value": "people_fully_vaccinated_smoothed",
+                "resources": [
+                    "ddf--datapoints--people_fully_vaccinated_smoothed--by--geo--time"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "geo",
+                    "time"
+                ],
+                "value": "people_fully_vaccinated_smoothed",
+                "resources": [
+                    "ddf--datapoints--people_fully_vaccinated_smoothed--by--geo--time"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "country",
+                    "time"
+                ],
                 "value": "people_vaccinated",
                 "resources": [
                     "ddf--datapoints--people_vaccinated--by--geo--time"
@@ -3868,6 +5273,46 @@
                 "value": "people_vaccinated_per_hundred",
                 "resources": [
                     "ddf--datapoints--people_vaccinated_per_hundred--by--geo--time"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "country",
+                    "time"
+                ],
+                "value": "people_vaccinated_per_hundred_smoothed",
+                "resources": [
+                    "ddf--datapoints--people_vaccinated_per_hundred_smoothed--by--geo--time"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "geo",
+                    "time"
+                ],
+                "value": "people_vaccinated_per_hundred_smoothed",
+                "resources": [
+                    "ddf--datapoints--people_vaccinated_per_hundred_smoothed--by--geo--time"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "country",
+                    "time"
+                ],
+                "value": "people_vaccinated_smoothed",
+                "resources": [
+                    "ddf--datapoints--people_vaccinated_smoothed--by--geo--time"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "geo",
+                    "time"
+                ],
+                "value": "people_vaccinated_smoothed",
+                "resources": [
+                    "ddf--datapoints--people_vaccinated_smoothed--by--geo--time"
                 ]
             },
             {
@@ -3915,6 +5360,46 @@
                     "country",
                     "time"
                 ],
+                "value": "population_density_smoothed",
+                "resources": [
+                    "ddf--datapoints--population_density_smoothed--by--geo--time"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "geo",
+                    "time"
+                ],
+                "value": "population_density_smoothed",
+                "resources": [
+                    "ddf--datapoints--population_density_smoothed--by--geo--time"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "country",
+                    "time"
+                ],
+                "value": "population_smoothed",
+                "resources": [
+                    "ddf--datapoints--population_smoothed--by--geo--time"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "geo",
+                    "time"
+                ],
+                "value": "population_smoothed",
+                "resources": [
+                    "ddf--datapoints--population_smoothed--by--geo--time"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "country",
+                    "time"
+                ],
                 "value": "positive_rate",
                 "resources": [
                     "ddf--datapoints--positive_rate--by--geo--time"
@@ -3928,6 +5413,26 @@
                 "value": "positive_rate",
                 "resources": [
                     "ddf--datapoints--positive_rate--by--geo--time"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "country",
+                    "time"
+                ],
+                "value": "positive_rate_smoothed",
+                "resources": [
+                    "ddf--datapoints--positive_rate_smoothed--by--geo--time"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "geo",
+                    "time"
+                ],
+                "value": "positive_rate_smoothed",
+                "resources": [
+                    "ddf--datapoints--positive_rate_smoothed--by--geo--time"
                 ]
             },
             {
@@ -3955,6 +5460,26 @@
                     "country",
                     "time"
                 ],
+                "value": "reproduction_rate_smoothed",
+                "resources": [
+                    "ddf--datapoints--reproduction_rate_smoothed--by--geo--time"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "geo",
+                    "time"
+                ],
+                "value": "reproduction_rate_smoothed",
+                "resources": [
+                    "ddf--datapoints--reproduction_rate_smoothed--by--geo--time"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "country",
+                    "time"
+                ],
                 "value": "stringency_index",
                 "resources": [
                     "ddf--datapoints--stringency_index--by--geo--time"
@@ -3975,6 +5500,26 @@
                     "country",
                     "time"
                 ],
+                "value": "stringency_index_smoothed",
+                "resources": [
+                    "ddf--datapoints--stringency_index_smoothed--by--geo--time"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "geo",
+                    "time"
+                ],
+                "value": "stringency_index_smoothed",
+                "resources": [
+                    "ddf--datapoints--stringency_index_smoothed--by--geo--time"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "country",
+                    "time"
+                ],
                 "value": "tests_per_case",
                 "resources": [
                     "ddf--datapoints--tests_per_case--by--geo--time"
@@ -3988,6 +5533,26 @@
                 "value": "tests_per_case",
                 "resources": [
                     "ddf--datapoints--tests_per_case--by--geo--time"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "country",
+                    "time"
+                ],
+                "value": "tests_per_case_smoothed",
+                "resources": [
+                    "ddf--datapoints--tests_per_case_smoothed--by--geo--time"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "geo",
+                    "time"
+                ],
+                "value": "tests_per_case_smoothed",
+                "resources": [
+                    "ddf--datapoints--tests_per_case_smoothed--by--geo--time"
                 ]
             },
             {
@@ -4055,6 +5620,46 @@
                     "country",
                     "time"
                 ],
+                "value": "total_boosters_per_hundred_smoothed",
+                "resources": [
+                    "ddf--datapoints--total_boosters_per_hundred_smoothed--by--geo--time"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "geo",
+                    "time"
+                ],
+                "value": "total_boosters_per_hundred_smoothed",
+                "resources": [
+                    "ddf--datapoints--total_boosters_per_hundred_smoothed--by--geo--time"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "country",
+                    "time"
+                ],
+                "value": "total_boosters_smoothed",
+                "resources": [
+                    "ddf--datapoints--total_boosters_smoothed--by--geo--time"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "geo",
+                    "time"
+                ],
+                "value": "total_boosters_smoothed",
+                "resources": [
+                    "ddf--datapoints--total_boosters_smoothed--by--geo--time"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "country",
+                    "time"
+                ],
                 "value": "total_cases",
                 "resources": [
                     "ddf--datapoints--total_cases--by--geo--time"
@@ -4088,6 +5693,46 @@
                 "value": "total_cases_per_million",
                 "resources": [
                     "ddf--datapoints--total_cases_per_million--by--geo--time"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "country",
+                    "time"
+                ],
+                "value": "total_cases_per_million_smoothed",
+                "resources": [
+                    "ddf--datapoints--total_cases_per_million_smoothed--by--geo--time"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "geo",
+                    "time"
+                ],
+                "value": "total_cases_per_million_smoothed",
+                "resources": [
+                    "ddf--datapoints--total_cases_per_million_smoothed--by--geo--time"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "country",
+                    "time"
+                ],
+                "value": "total_cases_smoothed",
+                "resources": [
+                    "ddf--datapoints--total_cases_smoothed--by--geo--time"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "geo",
+                    "time"
+                ],
+                "value": "total_cases_smoothed",
+                "resources": [
+                    "ddf--datapoints--total_cases_smoothed--by--geo--time"
                 ]
             },
             {
@@ -4135,6 +5780,46 @@
                     "country",
                     "time"
                 ],
+                "value": "total_deaths_per_million_smoothed",
+                "resources": [
+                    "ddf--datapoints--total_deaths_per_million_smoothed--by--geo--time"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "geo",
+                    "time"
+                ],
+                "value": "total_deaths_per_million_smoothed",
+                "resources": [
+                    "ddf--datapoints--total_deaths_per_million_smoothed--by--geo--time"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "country",
+                    "time"
+                ],
+                "value": "total_deaths_smoothed",
+                "resources": [
+                    "ddf--datapoints--total_deaths_smoothed--by--geo--time"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "geo",
+                    "time"
+                ],
+                "value": "total_deaths_smoothed",
+                "resources": [
+                    "ddf--datapoints--total_deaths_smoothed--by--geo--time"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "country",
+                    "time"
+                ],
                 "value": "total_tests",
                 "resources": [
                     "ddf--datapoints--total_tests--by--geo--time"
@@ -4168,6 +5853,46 @@
                 "value": "total_tests_per_thousand",
                 "resources": [
                     "ddf--datapoints--total_tests_per_thousand--by--geo--time"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "country",
+                    "time"
+                ],
+                "value": "total_tests_per_thousand_smoothed",
+                "resources": [
+                    "ddf--datapoints--total_tests_per_thousand_smoothed--by--geo--time"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "geo",
+                    "time"
+                ],
+                "value": "total_tests_per_thousand_smoothed",
+                "resources": [
+                    "ddf--datapoints--total_tests_per_thousand_smoothed--by--geo--time"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "country",
+                    "time"
+                ],
+                "value": "total_tests_smoothed",
+                "resources": [
+                    "ddf--datapoints--total_tests_smoothed--by--geo--time"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "geo",
+                    "time"
+                ],
+                "value": "total_tests_smoothed",
+                "resources": [
+                    "ddf--datapoints--total_tests_smoothed--by--geo--time"
                 ]
             },
             {
@@ -4215,6 +5940,46 @@
                     "country",
                     "time"
                 ],
+                "value": "total_vaccinations_per_hundred_smoothed",
+                "resources": [
+                    "ddf--datapoints--total_vaccinations_per_hundred_smoothed--by--geo--time"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "geo",
+                    "time"
+                ],
+                "value": "total_vaccinations_per_hundred_smoothed",
+                "resources": [
+                    "ddf--datapoints--total_vaccinations_per_hundred_smoothed--by--geo--time"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "country",
+                    "time"
+                ],
+                "value": "total_vaccinations_smoothed",
+                "resources": [
+                    "ddf--datapoints--total_vaccinations_smoothed--by--geo--time"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "geo",
+                    "time"
+                ],
+                "value": "total_vaccinations_smoothed",
+                "resources": [
+                    "ddf--datapoints--total_vaccinations_smoothed--by--geo--time"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "country",
+                    "time"
+                ],
                 "value": "weekly_hosp_admissions",
                 "resources": [
                     "ddf--datapoints--weekly_hosp_admissions--by--geo--time"
@@ -4255,6 +6020,46 @@
                     "country",
                     "time"
                 ],
+                "value": "weekly_hosp_admissions_per_million_smoothed",
+                "resources": [
+                    "ddf--datapoints--weekly_hosp_admissions_per_million_smoothed--by--geo--time"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "geo",
+                    "time"
+                ],
+                "value": "weekly_hosp_admissions_per_million_smoothed",
+                "resources": [
+                    "ddf--datapoints--weekly_hosp_admissions_per_million_smoothed--by--geo--time"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "country",
+                    "time"
+                ],
+                "value": "weekly_hosp_admissions_smoothed",
+                "resources": [
+                    "ddf--datapoints--weekly_hosp_admissions_smoothed--by--geo--time"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "geo",
+                    "time"
+                ],
+                "value": "weekly_hosp_admissions_smoothed",
+                "resources": [
+                    "ddf--datapoints--weekly_hosp_admissions_smoothed--by--geo--time"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "country",
+                    "time"
+                ],
                 "value": "weekly_icu_admissions",
                 "resources": [
                     "ddf--datapoints--weekly_icu_admissions--by--geo--time"
@@ -4288,6 +6093,46 @@
                 "value": "weekly_icu_admissions_per_million",
                 "resources": [
                     "ddf--datapoints--weekly_icu_admissions_per_million--by--geo--time"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "country",
+                    "time"
+                ],
+                "value": "weekly_icu_admissions_per_million_smoothed",
+                "resources": [
+                    "ddf--datapoints--weekly_icu_admissions_per_million_smoothed--by--geo--time"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "geo",
+                    "time"
+                ],
+                "value": "weekly_icu_admissions_per_million_smoothed",
+                "resources": [
+                    "ddf--datapoints--weekly_icu_admissions_per_million_smoothed--by--geo--time"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "country",
+                    "time"
+                ],
+                "value": "weekly_icu_admissions_smoothed",
+                "resources": [
+                    "ddf--datapoints--weekly_icu_admissions_smoothed--by--geo--time"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "geo",
+                    "time"
+                ],
+                "value": "weekly_icu_admissions_smoothed",
+                "resources": [
+                    "ddf--datapoints--weekly_icu_admissions_smoothed--by--geo--time"
                 ]
             }
         ],
