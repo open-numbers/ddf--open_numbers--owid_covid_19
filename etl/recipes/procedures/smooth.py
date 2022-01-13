@@ -57,6 +57,7 @@ def gen_concept(chef: Chef, ingredients: List[DataPointIngredient], result, base
 
     df = pd.DataFrame({'concept': indicators, 'name': names, 'description': desc, 'tags': tags})
     df = df.set_index('concept')
+    df['concept_type'] = 'measure'
 
     # also move some of already smoothed indicators to smoothed tags
     cb.loc[cb.index.str.contains('smoothed'), "tags"] = cb.loc[cb.index.str.contains('smoothed'), "tags"].map(lambda x: x + "_smoothed")
