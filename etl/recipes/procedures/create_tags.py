@@ -39,7 +39,7 @@ def in_entity(chef: Chef, ingredients: List[ConceptIngredient], result,
     tags = names.map(to_concept_id)
     res1 = pd.DataFrame({'tag': tags.values, 'name': names.values})
     # also, add 7 days smoothed indicators tags
-    res2 = pd.DataFrame({'tag': tags.map(lambda x: x + "_smoothed"), 'name': names.map(lambda x: x + " (7 days smoothed)")})
+    res2 = pd.DataFrame({'tag': tags.map(lambda x: x + "_smoothed"), 'name': names.map(lambda x: x + " (7-day smoothed)")})
     res = pd.concat([res1, res2], ignore_index=True)
     res['parent'] = np.nan
     new_data['tag'] = res

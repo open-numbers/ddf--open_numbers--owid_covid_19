@@ -51,9 +51,9 @@ def gen_concept(chef: Chef, ingredients: List[DataPointIngredient], result, base
     # create a list of indicator ids without the tailing _smoothed
     indicators_ = list(map(lambda x: x[:-9], indicators))
     # get names/tags/descriptions for them
-    names = cb.loc[indicators_, "name"].map(lambda x: x + " (7 days smoothed)")
+    names = cb.loc[indicators_, "name"].map(lambda x: x + " (7-day smoothed)")
     tags = cb.loc[indicators_, 'tags'].map(lambda x: x + "_smoothed")
-    desc = cb.loc[indicators_, 'description']
+    desc = cb.loc[indicators_, 'description'].map(lambda x: x + " (7-day smoothed)")
 
     df = pd.DataFrame({'concept': indicators, 'name': names, 'description': desc, 'tags': tags})
     df = df.set_index('concept')
