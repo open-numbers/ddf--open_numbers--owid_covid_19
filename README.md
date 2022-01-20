@@ -1,5 +1,6 @@
 # OWID covid 19 dataset in open-numbers namespace
 
+Updated daily automatically
 
 To get started with DDF and learn how to use the dataset, please read the
 [introduction to DDF][1] and [DDFcsv format document][2].
